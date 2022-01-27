@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+@use "./_modules/reset"; // ← _modules内の_reset.scss
+@use "./_modules/base"; // ← _modules内の_base.scss
+h1 {
+  color: base.$green;
+  span {
+    color: base.$red;
+  }
+}
