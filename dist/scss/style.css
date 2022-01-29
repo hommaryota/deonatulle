@@ -576,4 +576,59 @@ html {
   margin-left: 6.588579795%;
   margin-right: 5.5636896047%;
 }
+
+.item {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10.0522193211%;
+}
+.item__title {
+  position: absolute;
+  top: 0;
+  left: 3.7859007833%;
+  right: 4.3080939948%;
+  transform: translateY(-50%);
+}
+.item__text {
+  padding-top: 7.9634464752%;
+  margin-left: 3.5248041775%;
+  margin-right: 2.7415143603%;
+}
+.item__list {
+  margin-top: 5.091383812%;
+  margin-right: 5.091383812%;
+  margin-left: 4.5691906005%;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  grid-row-gap: 14px;
+  grid-column-gap: 24px;
+  align-items: center;
+}
+.item__list-li {
+  max-width: 336px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item__list .info {
+  max-width: 257px;
+  position: absolute;
+  bottom: 13.1360946746%;
+  margin-right: 14.7859922179%;
+  margin-left: 14.3968871595%;
+}
+.item__list .buy {
+  max-width: 257px;
+  position: absolute;
+  bottom: 4.3786982249%;
+  margin-right: 14.7859922179%;
+  margin-left: 14.3968871595%;
+}
+.item__cm {
+  max-width: 690px;
+  margin-top: 5.091383812%;
+  margin-right: 5.2219321149%;
+  margin-left: 4.8302872063%;
+}
 /*# sourceMappingURL=style.css.map */

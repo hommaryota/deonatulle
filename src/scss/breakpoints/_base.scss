@@ -196,3 +196,60 @@ html {
     @include marginR(38%, 683%);
   }
 }
+
+.item {
+  width: 100%;
+  position: relative;
+  @include paddingB(77%, 766%);
+  &__title {
+    position: absolute;
+    top: 0;
+    left: calc(29% / 766% * 100%);
+    right: calc(33% / 766% * 100%);
+    transform: translateY(-50%);
+  }
+
+  &__text {
+    @include paddingT(61%, 766%);
+    @include marginL(27%, 766%);
+    @include marginR(21%, 766%);
+  }
+
+  &__list {
+    @include marginT(39%, 766%);
+    @include marginR(39%, 766%);
+    @include marginL(35%, 766%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    grid-row-gap: 14px;
+    grid-column-gap: 24px;
+    align-items: center;
+    &-li {
+      max-width: 336px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    & .info {
+      max-width: 257px;
+      position: absolute;
+      bottom: calc(111% / 845% * 100%);
+      @include marginR(38%, 257%);
+      @include marginL(37%, 257%);
+    }
+    & .buy {
+      max-width: 257px;
+      position: absolute;
+      bottom: calc(37% / 845% * 100%);
+      @include marginR(38%, 257%);
+      @include marginL(37%, 257%);
+    }
+  }
+
+  &__cm {
+    max-width: 690px;
+    @include marginT(39%, 766%);
+    @include marginR(40%, 766%);
+    @include marginL(37%, 766%);
+  }
+}
