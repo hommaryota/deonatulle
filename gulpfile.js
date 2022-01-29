@@ -17,7 +17,7 @@ const imageminMozjpeg = require("imagemin-mozjpeg");
 const pngquant = require("imagemin-pngquant");
 // 入出力するフォルダを指定
 const srcPath = {
-  scss: "./src/**/*.scss",
+  scss: "./src/**/**/*.scss",
   html: "./src/**/*.html",
   js: "./src/**/*.js",
   img: "./src/img/**/*",
