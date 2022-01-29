@@ -1,0 +1,34 @@
+// 766px幅用の計算式
+// margin各種
+@mixin marginT($px: 0%, $all: 0%) {
+  margin-top: calc($px / $all * 100%);
+}
+
+@mixin marginB($px: 0%, $all: 0%) {
+  margin-bottom: calc($px / $all * 100%);
+}
+
+@mixin marginL($px: 0%, $all: 0%) {
+  margin-left: calc($px / $all * 100%);
+}
+
+@mixin marginR($px: 0%, $all: 0%) {
+  margin-right: calc($px / $all * 100%);
+}
+
+// padding各種
+@mixin paddingT($px: 0%, $all: 0%) {
+  padding-top: calc($px / $all * 100%);
+}
+
+@mixin paddingB($px: 0%, $all: 0%) {
+  padding-bottom: calc($px / $all * 100%);
+}
+
+@mixin paddingL($px: 0%, $all: 0%) {
+  padding-left: calc($px / $all * 100%);
+}
+
+@mixin paddingR($px: 0%, $all: 0%) {
+  padding-right: calc($px / $all * 100%);
+}

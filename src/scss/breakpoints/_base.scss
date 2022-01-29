@@ -27,8 +27,8 @@ html {
   @extend .flex;
   justify-content: space-between;
   height: 88px;
-  padding-left: calc(43% / 766% * 100%);
-  padding-right: calc(36% / 766% * 100%);
+  @include paddingL(43%, 776%);
+  @include paddingR(36%, 776%);
 
   &__title {
     max-width: 114px;
@@ -46,12 +46,12 @@ html {
 
     & .fb {
       max-width: 56px;
-      margin-left: calc(41% / 256% * 100%);
+      @include marginL(41%, 256%);
     }
 
     & .twitter {
       max-width: 66px;
-      margin-left: calc(43% / 256% * 100%);
+      @include marginL(43%, 256%);
     }
   }
 }
@@ -79,9 +79,9 @@ html {
 
 .map {
   width: 100%;
-  padding-left: calc(31% / 766% * 100%);
-  padding-right: calc(36% / 766% * 100%);
-  margin-top: 4.65%;
+  @include marginT(44%, 766%);
+  @include paddingL(31%, 766%);
+  @include paddingR(36%, 766%);
 
   &__main {
     width: 100%;
@@ -89,26 +89,26 @@ html {
     &-inner {
       position: absolute;
       bottom: calc(53% / 842% * 100%);
-      margin-left: calc(28% / 689% * 100%);
-      margin-right: calc(28% / 689% * 100%);
+      @include marginL(28%, 689%);
+      @include marginR(28%, 689%);
     }
     &-about {
       position: absolute;
       bottom: 0;
       right: calc(6% / 689% * 100%);
       transform: translateY(50%);
-      margin-left: calc(440% / 689% * 100%);
+      @include marginL(440%, 689%);
     }
   }
 
   & .catch {
-    margin-top: 6.14%;
+    @include marginT(41%, 766%);
   }
 }
 
 .about {
   width: 100%;
-  margin-top: calc(128% / 766% * 100%);
+  @include marginT(128%, 766%);
   background-color: #053984;
   position: relative;
   &__title {
@@ -116,14 +116,83 @@ html {
     top: 0;
     left: calc(30% / 766% * 100%);
     right: calc(31% / 766% * 100%);
-
     transform: translateY(-50%);
   }
 
   &__text {
-    padding-top: calc(70% / 766% * 100%);
-    padding-bottom: calc(70% / 766% * 100%);
-    padding-left: calc(42% / 766% * 100%);
-    padding-right: calc(46% / 766% * 100%);
+    @include paddingT(70%, 766%);
+    @include paddingB(70%, 766%);
+    @include paddingL(42%, 766%);
+    @include paddingR(46%, 766%);
+  }
+}
+
+.point {
+  width: 100%;
+  @include marginT(42%, 766%);
+
+  &__title {
+    max-width: 702px;
+    @include marginL(29%, 766%);
+    @include marginR(34%, 766%);
+  }
+
+  &__list {
+    @include paddingL(12%, 766%);
+    @include paddingR(12%, 766%);
+    @include marginT(50%, 766%);
+    &-li {
+      max-width: 713px;
+      &:nth-child(2) {
+        @include marginT(16%, 713%);
+        @include marginB(15%, 713%);
+      }
+    }
+  }
+}
+
+.secret {
+  width: 100%;
+  background-color: $cBlue;
+  @include marginT(164%, 766%);
+  @include paddingB(141%, 683%);
+  position: relative;
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: calc(32% / 766% * 100%);
+    right: calc(32% / 766% * 100%);
+    transform: translateY(-50%);
+  }
+
+  &__list {
+    @include paddingT(100%, 766%);
+
+    &-li {
+      position: relative;
+      max-width: 668px;
+      @include marginL(43%, 766%);
+      @include marginR(45%, 766%);
+
+      & > div {
+        max-width: 497px;
+        position: absolute;
+        bottom: calc(34% / 497% * 100%);
+        @include marginL(89%, 668%);
+        @include marginR(85%, 668%);
+      }
+      &:nth-child(2) {
+        @include marginT(40%, 668%);
+        @include marginB(42%, 668%);
+      }
+    }
+  }
+
+  &__text {
+    max-width: 683px;
+    @include marginT(57%, 683%);
+    @include marginL(45%, 683%);
+    @include marginR(38%, 683%);
   }
 }
