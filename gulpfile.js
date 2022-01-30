@@ -116,12 +116,13 @@ const watchFiles = () => {
   gulp.watch(srcPath.scss, gulp.series(cssSass));
   gulp.watch(srcPath.html, gulp.series(html, browserSyncReload));
   gulp.watch(srcPath.img, gulp.series(minifyImage, browserSyncReload));
+  gulp.watch(srcPath.js, gulp.series(jsMin));
 };
 // 開発段階 全タスク実行文
 exports.default = gulp.series(
   clean,
   gulp.parallel(html, cssSass, minifyImage),
-  gulp.parallel(watchFiles, browserSyncFunc)
+  gulp.parallel(watchFiles, browserSyncFunc, jsMin)
 );
 // 提出段階 全タスク実行文
 exports.prod = gulp.series(
