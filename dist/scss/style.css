@@ -811,8 +811,6 @@ html {
   }
   .about__title {
     max-width: 704px;
-    left: 0;
-    right: 0;
     margin: 0 auto;
   }
   .about__text {
@@ -855,7 +853,6 @@ html {
   .secret__title {
     max-width: 704px;
     left: 0;
-    right: 0;
     margin: 0 auto;
   }
   .secret__list {
@@ -891,7 +888,6 @@ html {
   .item__title {
     max-width: 704px;
     left: 0;
-    right: 0;
     margin: 0 auto;
   }
   .item__text {
