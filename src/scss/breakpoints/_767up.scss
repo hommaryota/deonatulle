@@ -1,0 +1,239 @@
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+
+.padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  max-width: 1000px;
+  height: 133px;
+  @extend .padding;
+  margin: 0 auto;
+
+  &__title {
+    max-width: 120px;
+  }
+
+  &__sns {
+    max-width: 185px;
+    & .line {
+      max-width: 41px;
+    }
+
+    & .fb {
+      max-width: 42px;
+      @include marginL(28%, 185%);
+    }
+
+    & .twitter {
+      max-width: 48px;
+      @include marginL(26%, 185%);
+    }
+  }
+}
+
+.top {
+  height: 90px;
+  &__title {
+    max-width: 590px;
+  }
+}
+
+.map {
+  max-width: 1000px;
+  @extend .padding;
+  margin: 0 auto;
+  @include marginT(55%, 1000%);
+
+  &__main {
+    &-about {
+      max-width: 263px;
+      bottom: calc(130% / 739% * 100%);
+      right: calc(60% / 1000% * 100%);
+      transform: translateY(0);
+      @include marginL(676%, 1000%);
+    }
+  }
+
+  & .catch {
+    max-width: 714px;
+    margin: 0 auto;
+    @include marginT(23%, 1000%);
+  }
+}
+
+.about {
+  @include marginT(119%, 1000%);
+  & > span {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  &__title {
+    max-width: 704px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__text {
+    @include paddingT(114%, 1000%);
+    @include paddingB(91%, 1000%);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.point {
+  max-width: 1000px;
+  margin: 0 auto;
+  @include marginT(66%, 1000%);
+  &__title {
+    @include marginL(150%, 1000%);
+    @include marginR(150%, 1000%);
+  }
+
+  &__list {
+    @include marginT(35%, 1000%);
+    &-li {
+      max-width: 1000px;
+      &:nth-child(2) {
+        @include marginT(60%, 1000%);
+        @include marginB(57%, 1000%);
+      }
+    }
+  }
+}
+
+.secret {
+  @include marginT(154%, 1000%);
+  @include paddingB(102%, 1000%);
+  position: relative;
+
+  & > span {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: 704px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    @include paddingT(103%, 1000%);
+
+    &-li {
+      max-width: 1000px;
+      margin: 0 auto;
+
+      & > div {
+        max-width: 319px;
+        bottom: calc(29% / 319% * 100%);
+      }
+      &:nth-child(2) {
+        margin-top: 0;
+        margin-bottom: 0;
+        @include marginL(19%, 319%);
+        @include marginR(24%, 319%);
+      }
+    }
+  }
+
+  &__text {
+    max-width: 874px;
+    @include marginT(23%, 874%);
+    @include marginL(61%, 874%);
+    @include marginR(66%, 874%);
+  }
+}
+
+.item {
+  max-width: 1000px;
+  @include paddingB(102%, 1000%);
+  margin: 0 auto;
+
+  &__title {
+    max-width: 704px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__text {
+    max-width: 868px;
+    @include paddingT(108%, 1000%);
+    @include marginL(68%, 1000%);
+    @include marginR(64%, 1000%);
+  }
+
+  &__list {
+    margin: 0 auto;
+    @include marginT(42%, 1000%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-li {
+      max-width: 235px;
+    }
+
+    & .info {
+      max-width: 92px;
+      bottom: calc(28% / 1000% * 100%);
+      left: 0;
+      @include marginL(21%, 235%);
+      @include marginR(122%, 235%);
+    }
+    & .buy {
+      max-width: 92px;
+      bottom: calc(28% / 1000% * 100%);
+      left: 0;
+      @include marginL(122%, 235%);
+      @include marginR(21%, 235%);
+    }
+  }
+
+  &__cm {
+    max-width: 1000px;
+    margin: 0 auto;
+    @include marginT(89%, 1000%);
+  }
+}
+
+.share {
+  height: 103px;
+}
+
+.link {
+  width: 80px;
+  position: fixed;
+  bottom: 50%;
+  left: 100%;
+
+  &__item {
+    transform: translate(-100%, 50%);
+  }
+}
+
+#topBtn {
+  max-width: 89px;
+  position: fixed;
+  right: 0;
+  bottom: calc(100% / 1000% * 100%);
+}
+
+.footer {
+  height: 59px;
+  margin-bottom: 0;
+}
