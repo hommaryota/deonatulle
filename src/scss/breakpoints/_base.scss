@@ -119,10 +119,11 @@ html {
   background-color: #053984;
   position: relative;
   &__title {
+    max-width: 704px;
     position: absolute;
     top: 0;
-    left: calc(30% / 766% * 100%);
-    right: calc(31% / 766% * 100%);
+    @include marginL(30%, 766%);
+    @include marginR(31%, 766%);
     transform: translateY(-50%);
   }
 
@@ -166,10 +167,11 @@ html {
   position: relative;
 
   &__title {
+    max-width: 704px;
     position: absolute;
     top: 0;
-    left: calc(32% / 766% * 100%);
-    right: calc(32% / 766% * 100%);
+    @include marginL(32%, 766%);
+    @include marginR(32%, 766%);
     transform: translateY(-50%);
   }
 
@@ -209,10 +211,11 @@ html {
   position: relative;
   @include paddingB(77%, 766%);
   &__title {
+    max-width: 704px;
     position: absolute;
     top: 0;
-    left: calc(29% / 766% * 100%);
-    right: calc(33% / 766% * 100%);
+    @include marginL(29%, 766%);
+    @include marginR(33%, 766%);
     transform: translateY(-50%);
   }
 

@@ -509,10 +509,11 @@ html {
   position: relative;
 }
 .about__title {
+  max-width: 704px;
   position: absolute;
   top: 0;
-  left: 3.9164490862%;
-  right: 4.046997389%;
+  margin-left: 3.9164490862%;
+  margin-right: 4.046997389%;
   transform: translateY(-50%);
 }
 .about__text {
@@ -552,10 +553,11 @@ html {
   position: relative;
 }
 .secret__title {
+  max-width: 704px;
   position: absolute;
   top: 0;
-  left: 4.1775456919%;
-  right: 4.1775456919%;
+  margin-left: 4.1775456919%;
+  margin-right: 4.1775456919%;
   transform: translateY(-50%);
 }
 .secret__list {
@@ -591,10 +593,11 @@ html {
   padding-bottom: 10.0522193211%;
 }
 .item__title {
+  max-width: 704px;
   position: absolute;
   top: 0;
-  left: 3.7859007833%;
-  right: 4.3080939948%;
+  margin-left: 3.7859007833%;
+  margin-right: 4.3080939948%;
   transform: translateY(-50%);
 }
 .item__text {
@@ -805,13 +808,19 @@ html {
     margin-top: 11.9%;
   }
   .about > span {
+    position: relative;
     display: block;
     max-width: 1000px;
     margin: 0 auto;
   }
   .about__title {
     max-width: 704px;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 15.6%;
+    margin-right: 13.8%;
+    transform: translateY(-50%);
   }
   .about__text {
     padding-top: 11.4%;
@@ -849,11 +858,13 @@ html {
     display: block;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
   }
   .secret__title {
     max-width: 704px;
     left: 0;
-    margin: 0 auto;
+    margin-left: 15.6%;
+    margin-right: 13.8%;
   }
   .secret__list {
     display: flex;
@@ -888,7 +899,8 @@ html {
   .item__title {
     max-width: 704px;
     left: 0;
-    margin: 0 auto;
+    margin-left: 15.6%;
+    margin-right: 15.3%;
   }
   .item__text {
     max-width: 868px;

@@ -71,13 +71,19 @@
 .about {
   @include marginT(119%, 1000%);
   & > span {
+    position: relative;
     display: block;
     max-width: 1000px;
     margin: 0 auto;
   }
   &__title {
     max-width: 704px;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include marginL(156%, 1000%);
+    @include marginR(138%, 1000%);
+    transform: translateY(-50%);
   }
 
   &__text {
@@ -118,12 +124,14 @@
     display: block;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
   }
 
   &__title {
     max-width: 704px;
     left: 0;
-    margin: 0 auto;
+    @include marginL(156%, 1000%);
+    @include marginR(138%, 1000%);
   }
 
   &__list {
@@ -163,7 +171,8 @@
   &__title {
     max-width: 704px;
     left: 0;
-    margin: 0 auto;
+    @include marginL(156%, 1000%);
+    @include marginR(153%, 1000%);
   }
 
   &__text {
